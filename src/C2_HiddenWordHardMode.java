@@ -30,6 +30,11 @@ public class C2_HiddenWordHardMode {
                 String line = scanner.nextLine();
                 /* TODO: your code goes here */
 
+              int Scanner =  line.indexOf("");
+
+
+
+
             }
             scanner.close();
         } catch (FileNotFoundException e) {

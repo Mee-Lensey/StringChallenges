@@ -19,6 +19,12 @@ public class C1_HiddenWordFinder {
     public void findHiddenWord(String sentence) {
         /* TODO: your code goes here */
 
+        int hiddenIndex = sentence.indexOf("Hello");
+        int endoftheWordIndex = sentence.indexOf("end");
+        System.out.println ( "Hidden Word " +sentence.substring(hiddenIndex, endoftheWordIndex));
+
+
+
     }
 
 }

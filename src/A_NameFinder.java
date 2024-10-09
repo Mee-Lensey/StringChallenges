@@ -1,4 +1,4 @@
-/***
+/*
  * Problem: You are given an email address, and you need to extract the username
  * (everything before the @ symbol).
  * Write a method that returns the username from an email string.
@@ -18,6 +18,11 @@ public class A_NameFinder {
 
     public String findUsername(String email) {
         /* TODO: your code goes here */
+
+        int Kim_possible25 = email.indexOf("k");
+        int EmailIndex = email.indexOf("" , Kim_possible25);
+        System.out.println("Kim_possible25; " + email.substring(Kim_possible25, EmailIndex));
+
 
         return ""; // this is a temporary return to avoid errors
     }

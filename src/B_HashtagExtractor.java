@@ -18,6 +18,19 @@ public class B_HashtagExtractor {
     public void extractHashtags(String post) {
         /* TODO: your code goes here */
 
-    }
+        int hashIndex = post.indexOf("#");
+        while (hashIndex != -1) {
+            int spaceIndex = post.indexOf(" ", hashIndex);
 
+            if (spaceIndex == -1) {
+
+
+
+                System.out.println("Hashtag; " + post.substring(hashIndex, spaceIndex));
+                hashIndex = post.indexOf("#", spaceIndex);
+
+            }
+
+        }
+    }
 }
